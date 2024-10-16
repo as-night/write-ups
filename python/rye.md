@@ -19,13 +19,13 @@ where `pythonX.Y` stands for the Python version `rye` has used to
 create the project with, e.g., `python3.12`
 - `src/project-name/__main__.py`
 
-The purpose of these is to create an executable script that you can
+The purpose of these is to create the executable script that you can
 run either via `rye run project-name` or, when the `.venv` dir has
 been sourced manually, via `project-name`.
 
 ## Sourcing .venv
-`cd`-ing into the project's directory activates the virtual
-environment automatically:
+`cd`-ing into a project's directory activates the virtual environment
+automatically:
 ```
 $ cd project-name
 $ python -c 'import sys; print(sys.prefix)'
